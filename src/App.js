@@ -27,11 +27,17 @@ const style = {
 function App() {
   const [module, loading] = useWebAssembly();
   if (loading) return "WebAssembly is loading...";
+  else {
+    module.Log("Web Assembly has loaded!");
+  }
 
   return (
     <div className="App">
       <div style={style}>
-        {!loading ? module.HelloWorld("Aardhyn Lavender") : "Loading..."}
+        {!loading ? module.SimpleGreeting("Aardhyn Lavender") : "Loading..."}
+      </div>
+      <div style={style}>
+        {!loading ? module.Greeting("Aardhyn", "Lavender") : "Loading..."}
       </div>
     </div>
   );

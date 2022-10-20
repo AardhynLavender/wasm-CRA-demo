@@ -76,3 +76,7 @@ EMSCRIPTEN_BINDINGS(my_module) {
     emscripten::function("HelloWorld", &HelloWorld);
 }
 ```
+
+## Running
+
+![image](https://user-images.githubusercontent.com/83677410/196879973-ed08f239-f61a-4314-840e-0b43e67f2778.png)

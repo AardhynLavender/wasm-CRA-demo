@@ -34,8 +34,8 @@ void Log(std::string message) { std::cout << message << std::endl; }
 // We can write SDL2, and provide our gameloop to Emscripten.
 // the renderer is redirected to an HTML Canvas we provide client-side
 
-int vx = 10;
-int vy = 10;
+int vx = 1;
+int vy = 5;
 SDL_Rect rect{ 0, 0, 100, 100 };
 
 SDL_Window* window;
